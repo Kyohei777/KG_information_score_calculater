@@ -37,6 +37,19 @@ $$\frac{\left( 合格科目平均点 - 50 \right) * 合格科目数}  {在学セ
 
 ## dockerの使い方
 
-docker build -t ruby_app .
-docker run -it --rm ruby_app /bin/bash
-ruby score_calculater.rb 知りたい成績表pdf
+# Ruby アプリケーションの実行手順
+
+1. Docker イメージをビルドします:
+   ```bash
+   docker build -t ruby_app .
+   ```
+
+2. Docker コンテナを実行します:
+   ```bash
+   docker run -it --rm ruby_app /bin/bash
+   ```
+
+3. Ruby スクリプトを実行します:
+   ```bash
+   ruby score_calculater.rb 知りたい成績表pdf
+   ```
