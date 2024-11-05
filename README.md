@@ -38,5 +38,5 @@ $$\frac{\left( 合格科目平均点 - 50 \right) * 合格科目数}  {在学セ
 ## dockerの使い方
 
 docker build -t ruby_app .
-docker run -it --rm ruby_app
+docker run -it --rm ruby_app /bin/bash
 ruby score_calculater.rb 知りたい成績表pdf
